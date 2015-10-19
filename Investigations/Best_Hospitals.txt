@@ -4,17 +4,17 @@ The following are my top 10 rankings of which hospitals have the most consistent
 
 ####################################################################
 ------------------------------------------------------------------
-'hospitalname'	                             |  'overallavgscore'
+'hospitalname'                               |  'overallavgscore'
 ------------------------------------------------------------------
-'BEAR VALLEY COMMUNITY HOSPITAL'	           |  175.33333333333334
-'FALLS COMMUNITY HOSPITAL AND CLINIC'	       |  170.91176470588235
-'HOSP COMUNITARIO BUEN SAMARITANO'	         |  126.23181818181818
-'NOVANT HEALTH HAYMARKET MEDICAL CENTER'	   |  124.0
-'CRESCENT MEDICAL CENTER LANCASTER'	         |  114.16666666666667
-'SPECTRUM HEALTH GERBER MEMORIAL'	           |  113.72727272727273
-'PROVIDENT HOSPITAL OF CHICAGO'	             |  112.18846153846154
-'KERN MEDICAL CENTER'	                       |  109.9470588235294
-'SAN CARLOS INDIAN HOSPITAL'	               |  105.5
+'BEAR VALLEY COMMUNITY HOSPITAL'             |  175.33333333333334
+'FALLS COMMUNITY HOSPITAL AND CLINIC'        |  170.91176470588235
+'HOSP COMUNITARIO BUEN SAMARITANO'           |  126.23181818181818
+'NOVANT HEALTH HAYMARKET MEDICAL CENTER'     |  124.0
+'CRESCENT MEDICAL CENTER LANCASTER'          |  114.16666666666667
+'SPECTRUM HEALTH GERBER MEMORIAL'            |  113.72727272727273
+'PROVIDENT HOSPITAL OF CHICAGO'              |  112.18846153846154
+'KERN MEDICAL CENTER'                        |  109.9470588235294
+'SAN CARLOS INDIAN HOSPITAL'                 |  105.5
 'UNIVERSITY OF SOUTH ALABAMA MEDICAL CENTER' |	105.2078947368421
 ####################################################################
 
