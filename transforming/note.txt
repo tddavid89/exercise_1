@@ -1,0 +1,1 @@
+***Note: some files depend upon the creation of other files, so there is a particular order that the tables must be built. I included a "master" sql by the name of 'all.sql', that will run all transformation sql's in the appropriate order.
