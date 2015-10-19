@@ -1,0 +1,25 @@
+■ Which procedures have the greatest variability between hospitals?
+
+The following are my top 10 rankings of which procedures have the greatest variability between hospitals:
+
+################################################################################
+--------------------------------------------------
+'measurename'	             | 'var_score'
+--------------------------------------------------
+'ED1'	                     | 8617.740839212507
+'ED2'	                     | 3864.6924460743544
+'OP 18'	                   | 1656.5529409803205
+'Median Time to Transfer to Another Facility for Acute Coronary Intervention'
+                           | 869.0306968514053
+'Thrombolytic Therapy'	   | 481.98665882944397
+'Head CT results'	         | 477.18888614639235
+'Fibrinolytic Therapy Received Within 30 Minutes Of Hospital Arrival'
+                           | 352.6666666666667
+'Fibrinolytic Therapy Received Within 30 Minutes of ED Arrival'
+                           | 325.74632352941165
+'Median time to pain med'	 | 314.0819735739413
+'Door to diagnostic eval'	 | 285.00371267017476
+################################################################################
+
+
+To answer this question, I used the same metrics that I did for 'Best_Hospitals.txt' and 'Best_States.txt'. In order to determine the answer to this question, I took the table the I created that contained all of the procedures for both initial treatment and readmissions (AllProcedures) and took the variance of the scores of each measure name, grouping by measures name. Once I found the variance for each procedure, I ranked from highest variance to lowest variance.

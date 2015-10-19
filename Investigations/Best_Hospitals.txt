@@ -1,0 +1,26 @@
+■ What hospitals are models of high-quality care?  That is, which hospitals have the most consistently high scores for a variety of procedures.
+
+The following are my top 10 rankings of which hospitals have the most consistently high scores for a variety of procedures.
+
+####################################################################
+------------------------------------------------------------------
+'hospitalname'	                             |  'overallavgscore'
+------------------------------------------------------------------
+'BEAR VALLEY COMMUNITY HOSPITAL'	           |  175.33333333333334
+'FALLS COMMUNITY HOSPITAL AND CLINIC'	       |  170.91176470588235
+'HOSP COMUNITARIO BUEN SAMARITANO'	         |  126.23181818181818
+'NOVANT HEALTH HAYMARKET MEDICAL CENTER'	   |  124.0
+'CRESCENT MEDICAL CENTER LANCASTER'	         |  114.16666666666667
+'SPECTRUM HEALTH GERBER MEMORIAL'	           |  113.72727272727273
+'PROVIDENT HOSPITAL OF CHICAGO'	             |  112.18846153846154
+'KERN MEDICAL CENTER'	                       |  109.9470588235294
+'SAN CARLOS INDIAN HOSPITAL'	               |  105.5
+'UNIVERSITY OF SOUTH ALABAMA MEDICAL CENTER' |	105.2078947368421
+####################################################################
+
+
+In order to answer this question, I started with the 'hospitals.csv' and 'readmissions.csv' data sets. I determined that readmissions were just equally as valuable to determining the quality and consistency of the service that each hospital provided. As a result, I joined the two tables together (using a 'union all' statement) to create an 'AllProcedures' table.
+
+Once I had all of the procedures in one table, I needed to determine how I was going to assess quality. In order to determine quality, I used the 'score' column that was provided in both the 'hospitals.csv' and 'readmissions.csv' data sets. While it was unclear exactly how Medicare determined the value for this score, it was clear that it was a method that Medicare used to assess the overall quality of care for the given procedure. In addition, the 'score' column was a consistent way to value each of the procedures.
+
+Once I determined the method of how to value the quality of care, I needed to find a way to measure consistency. In order to determine consistency, I wanted to see which of the hospitals were the most well-rounded. Rather than simply taking the average score of each hospital, I took the average of each procedure within a given hospital. Once I found the average of each procedure, I then took the average of each of those values and created a composite average score for each hospital. By creating an average of the average procedure scores, I hoped to balance the weight of each procedure. As an example, if a hospital was well known for the quality of its surgeries and 90% of its procedures were surgical, then if we were to take the average of the 'score' column, grouped by hospital, then the result would be skewed in favor of its most frequent procedure -- surgeries. If this same hospital was very poor in another department, it would not be reflected in the overall average. As a result, by taking the average of each average, we are truly looking at how well each individual hospital does in each and every one of its departments, not just the procedures they perform most frequently.

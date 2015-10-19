@@ -1,0 +1,17 @@
+■ Are average scores for hospital quality or procedural variability correlated with patient survey responses?
+
+
+The following is the average of the ratios between the average scores for hospital quality and patient survey responses
+
+######################
+-------------------
+'avgratio'
+-------------------
+6.392562678677715
+######################
+
+I decided to split up the results for the last question into two parts: (1) hospital quality vs. survey results, and (2) procedural variability vs. variability of survey results. This file is for part 1.
+
+After seeing this result, I would conclude that there is a slight correlation between the average scores for hospital quality and patient survey responses. This number appears to be large, but if we are comparing it to the correlation between the procedural variability and patient survey responses, there is a much higher correlation here (we would hope to see the value be close to 1). Thus, if we are looking at correlation in a relative manner, there is a slight correlation between average hospital quality and patient survey responses as I have defined them, however, the correlation is minimal at best.
+
+In order to determine correlation, I created a table that housed the average score for each hospital (as determined by my previous method by taking the average of the average 'score' column for each measure) as well as the average survey score for each hospital (as defined in the 'survey_responses.csv' file). In this table, I also created a column that took the ratio between the two valules ('ScoreSurveyRatio' in Score_Ratio_Hospital table). The SQL query that I created reflects my decision to take the average of that column ('ScoreSurveyRatio') to determine the average ratio between the values of the 'score' column and the patient survey responses (HCAHPSBaseScore). I felt that if there was a strong correlation, the ratio between 'score' and patient survey responses should be very close or equal to 1. The fact that we see a number as large as 6 suggests that there is a slight correlation, but very minimal. The value for procedural variability vs. patient survey response is more than 600.

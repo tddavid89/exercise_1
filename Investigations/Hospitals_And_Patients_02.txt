@@ -1,0 +1,18 @@
+■ Are average scores for hospital quality or procedural variability correlated with patient survey responses?
+
+
+The following is the average of the ratios between procedural variability and the variability of patient survey responses
+
+######################
+-------------------
+'avgratio'
+-------------------
+618.6570676255956
+######################
+
+
+I decided to split up the results for the last question into two parts: (1) hospital quality vs. survey results, and (2) procedural variability vs. variability of survey results. This file is for part 2.
+
+After seeing this result, I would conclude that there is no correlation between procedural variability and the variability of patient survey responses. This number is too large, even if we compare it against the result for hospital quality vs. survey results (as we would hope to see a number close to or equal to 1). Thus, there is no correlation between procedural variability and variability of patient survey responses.
+
+In order to determine correlation, I created a table that housed the variability for each hospital (as determined by my previous method by taking the average of the average 'score' column for each measure) as well as the variability of survey scores for each hospital (as defined in the 'survey_responses.csv' file). In this table, I also created a column that took the ratio between the two values ('ScoreSurveyRatio' in Score_Ratio_Hospital table). The SQL query that I created reflects my decision to take the average of that column ('VarSurveyRatio') to determine the average ratio between the values of the 'score' column and the patient survey responses (HCAHPSBaseScore). I felt that if there was no correlation as the ratio between 'score' and patient survey responses should be very close or equal to 1. We should keep in mind that we are comparing variances, so we likely won't be as close to 1 as we would like to be, but we would still hope to see a small number, which would suggest that there is a tight distribution among both.

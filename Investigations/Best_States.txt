@@ -1,0 +1,23 @@
+■ What states are models of high-quality care?
+
+The following are my top 10 rankings of which states have the most consistently high scores for a variety of procedures:
+
+#############################
+---------------------------
+'state'	| 'overallavgscore'
+---------------------------
+'DC'	  | 77.1458521303258
+'PR'	  | 76.47011683742038
+'VI'	  | 76.05975609756098
+'DE'	  | 75.39495944531657
+'MD'	  | 75.00809704080034
+'NJ'	  | 73.9189834217823
+'CT'	  | 73.82517205908646
+'NV'	  | 73.8122615321489
+'NY'	  | 73.4849720110763
+'MA'	  | 72.42476786996573
+#############################
+
+To answer this question, I used the same criteria that I did to determine the top 10 rankings for the 'Best_Hospitals.txt'. To summarize, I determined value by utilizing the 'score' column provided in both the 'hospitals.csv' and 'readmissions.csv' data sets. I considered consistency to be the average score of the average score of each procedure (e.g. took the average score of each procedure, then took the average score for each state using the average score for each procedure).
+
+The only difference in my approach for this question, was rather than taking the average score for the average score of each procedure grouped by hospitals, I grouped the results by states. This method resulted in the list above. 
